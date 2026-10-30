@@ -368,7 +368,13 @@ button{ font-family: inherit; cursor: pointer; border: none; background: none; }
   color: var(--muted);
   margin-bottom: 20px;
 }
-.eyebrow::before{ content: ""; width: 28px; height: 1px; background: var(--ink); }
+.eyebrow::before{
+  content: "";
+  flex: none;
+  width: 14px;
+  height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23B04A34' d='M24 3C26 17 31 22 45 24C31 26 26 31 24 45C22 31 17 26 3 24C17 22 22 17 24 3Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 
 .about-headline{
   font-family: var(--font-display);
